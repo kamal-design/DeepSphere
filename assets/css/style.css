@@ -1,0 +1,750 @@
+@font-face {
+  font-family: "Aquiline";
+  src: url("../fonts/Aquiline/aqlswfte.ttf") format("truetype");
+  src: local("web/assets/fonts"), url("../fonts/Aquiline/aqlswfte.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aquiline";
+  src: url("../fonts/Aquiline/Aquiline-Book-Bold.ttf") format("truetype");
+  src: local("web/assets/fonts"), url("../fonts/Aquiline/Aquiline-Book-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans/DMSans-Regular.ttf") format("truetype");
+  src: local("web/assets/fonts"), url("../fonts/DMSans/DMSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans/DMSans-Italic.ttf") format("truetype");
+  src: local("web/assets/fonts"), url("../fonts/DMSans/DMSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans/DMSans-Medium.ttf") format("truetype");
+  src: local("web/assets/fonts"), url("../fonts/DMSans/DMSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans/DMSans-MediumItalic.ttf") format("truetype");
+  src: local("web/assets/fonts"), url("../fonts/DMSans/DMSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans/DMSans-Bold.ttf") format("truetype");
+  src: local("web/assets/fonts"), url("../fonts/DMSans/DMSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans/DMSans-BoldItalic.ttf") format("truetype");
+  src: local("web/assets/fonts"), url("../fonts/DMSans/DMSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Aquiline", "DMSans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Aquiline";
+  font-weight: bold;
+  font-style: normal;
+}
+
+main {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  main .container {
+    max-width: 1440px;
+    padding: 0 75px;
+  }
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+header .navbar {
+  padding: 0 1rem;
+}
+
+header .navbar .navbar-brand {
+  margin: 1rem;
+}
+
+header .navbar .btn {
+  padding: 6px 25px;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: DMSans;
+  letter-spacing: 0.7px;
+  text-transform: capitalize;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  header .navbar .navbar-brand {
+    width: 250px;
+  }
+  header .navbar .navbar-brand img {
+    max-width: 100% !important;
+    height: auto;
+  }
+  header .navbar .btn {
+    padding: 6px 15px;
+    margin-bottom: 1rem;
+  }
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  padding: 75px 0;
+  background: url(".././images/Banner.png") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: scroll;
+  z-index: 0;
+}
+
+.banner h3 {
+  font-family: "Aquiline";
+  font-size: 42px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.banner h2 {
+  font-family: "Aquiline";
+  font-size: 80px;
+  font-weight: bold;
+  font-style: normal;
+  color: #7ae4c3;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.banner h4 {
+  font-family: "DMSans";
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.banner p {
+  font-family: "DMSans";
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner form {
+  position: relative;
+}
+
+.banner form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.banner form .form-group .form-control {
+  height: calc(2em + .75rem + 2px);
+}
+
+.banner form .form-group textarea.form-control {
+  min-height: 125px;
+}
+
+.banner form label {
+  font-family: "DMSans";
+  font-size: 15px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.banner form button[type=submit] {
+  font-family: "DMSans";
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  font-weight: normal;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 350px;
+  margin-bottom: 1rem;
+}
+
+.banner small {
+  font-family: "DMSans";
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    background-position: right center;
+  }
+  .banner h2 {
+    font-size: 52px;
+    margin-bottom: 1rem;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+}
+
+.about-sec {
+  position: relative;
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.about-sec h2 {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1c9a72;
+  margin-bottom: 1rem;
+}
+
+.about-sec p {
+  font-family: 'DMSans';
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.about-sec p span {
+  font-style: italic;
+  color: #949494;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .about-sec h2 {
+    font-size: 32px;
+  }
+  .about-sec p {
+    font-size: 16px;
+  }
+}
+
+.divide-sec {
+  position: relative;
+  width: 100%;
+  min-height: 250px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.divide-sec .container-fluid {
+  padding: 0;
+}
+
+.divide-sec .leftside-color {
+  position: relative;
+  padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 0;
+}
+
+.divide-sec .leftside-color::before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  top: 0;
+  left: -10%;
+  background: #007bff;
+  -webkit-transform: skew(20deg, 0deg);
+          transform: skew(20deg, 0deg);
+  z-index: -1;
+}
+
+.divide-sec .leftside-color h3 {
+  color: #ffffff;
+  font-family: "Aquiline";
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.divide-sec .leftside-color h3 span {
+  display: block;
+  font-size: 48px;
+}
+
+.divide-sec .rightside-color {
+  position: relative;
+  padding: 60px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: -1;
+}
+
+.divide-sec .rightside-color::before {
+  content: '';
+  position: absolute;
+  width: 112%;
+  height: 100%;
+  top: 10%;
+  right: -10%;
+  background: #b5e0dc;
+  -webkit-transform: skew(20deg, 0deg);
+          transform: skew(20deg, 0deg);
+  z-index: -1;
+}
+
+.divide-sec .rightside-color h3 {
+  color: #444444;
+  font-family: "Aquiline";
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.divide-sec .rightside-color h3 span {
+  display: block;
+  font-size: 48px;
+}
+
+.divide-sec .rightside-color small {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .divide-sec .leftside-color {
+    padding: 60px 25px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .divide-sec .leftside-color::before {
+    -webkit-transform: skew(0deg, 0deg);
+            transform: skew(0deg, 0deg);
+  }
+  .divide-sec .leftside-color h3 {
+    font-size: 28px;
+  }
+  .divide-sec .leftside-color h3 span {
+    font-size: 32px;
+  }
+  .divide-sec .rightside-color {
+    padding: 60px 25px;
+  }
+  .divide-sec .rightside-color::before {
+    top: 0;
+    -webkit-transform: skew(0deg, 0deg);
+            transform: skew(0deg, 0deg);
+  }
+  .divide-sec .rightside-color h3 {
+    font-size: 28px;
+  }
+  .divide-sec .rightside-color h3 span {
+    font-size: 32px;
+  }
+}
+
+.skills-sec {
+  position: relative;
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.skills-sec h2 {
+  font-family: "Aquiline";
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1c9a72;
+  margin-bottom: 1rem;
+}
+
+.skills-sec h5 {
+  font-family: "DMSans";
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.5;
+  color: #444444;
+  margin-bottom: 1rem;
+}
+
+.skills-sec .imgbox {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills-sec .imgbox img {
+  max-width: 100% !important;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.skills-sec .imgbox h4 {
+  font-family: "DMSans";
+  font-size: 22px;
+  font-weight: normal;
+}
+
+@media (max-width: 767px) {
+  .skills-sec h2 {
+    font-size: 32px;
+  }
+}
+
+.partner-sec {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  background: url("./../images/BG1.png") no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  background-attachment: scroll;
+}
+
+.partner-sec h2 {
+  font-family: "Aquiline";
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1c9a72;
+  margin-bottom: 1rem;
+}
+
+.partner-sec p {
+  font-family: "DMSans";
+  font-size: 21px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.partner-sec p span {
+  font-family: "DMSans";
+  font-size: 16px;
+  font-style: italic;
+  color: #989898 !important;
+}
+
+.partner-sec h4 {
+  font-family: "Aquiline";
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.partner-sec .boximage {
+  position: relative;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.partner-sec .boximage img {
+  max-width: 100% !important;
+  height: 225px;
+}
+
+.partner-sec .boximage h4 {
+  font-family: "DMSans";
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1c9a72;
+  margin-bottom: 1rem;
+}
+
+.partner-sec .boximage p {
+  font-family: "DMSans";
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.partner-sec .btn {
+  display: inline-block;
+  padding: 6px 25px;
+  min-width: 350px;
+  font-family: "DMSans";
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .partner-sec h2 {
+    font-size: 32px;
+  }
+  .partner-sec h4 {
+    font-size: 26px;
+  }
+  .partner-sec p {
+    font-size: 18px;
+  }
+}
+
+.industry-sec {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 10px;
+  background: url("./../images/BG2.png") no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  background-attachment: scroll;
+  z-index: 0;
+}
+
+.industry-sec h2 {
+  font-family: "Aquiline";
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1c9a72;
+  margin-bottom: 1rem;
+}
+
+.industry-sec p {
+  font-family: "DMSans";
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.industry-sec p span {
+  font-family: "DMSans";
+  font-size: 16px;
+  font-style: italic;
+  color: #989898;
+}
+
+.industry-sec h4 {
+  font-family: "DMSans";
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.industry-sec h3 {
+  font-family: "Aquiline";
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1c9a72;
+  margin-bottom: 1rem;
+}
+
+.industry-sec .btn {
+  display: inline-block;
+  padding: 6px 45px;
+  min-width: 350px;
+  font-family: "DMSans";
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.industry-sec .list-left {
+  position: relative;
+  width: 375px;
+  min-height: 250px;
+  background: url(./../images/Image11.png) no-repeat;
+  background-size: inherit;
+  background-position: right center;
+  background-attachment: scroll;
+  list-style-type: none;
+  list-style-position: inside;
+  z-index: 0;
+  margin-bottom: 2rem;
+}
+
+.industry-sec .list-left li {
+  font-family: 'DMSans';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  color: #656565;
+}
+
+.industry-sec .list-left li:first-child {
+  padding-left: 75px;
+  padding-right: 30px;
+}
+
+.industry-sec .list-left li:nth-child(2) {
+  padding-left: 30px;
+}
+
+.industry-sec .list-left li:last-child {
+  padding-right: 80px;
+}
+
+.industry-sec .list-right {
+  position: relative;
+  width: 375px;
+  min-height: 250px;
+  background: url(./../images/Image10.png) no-repeat;
+  background-size: inherit;
+  background-position: left center;
+  background-attachment: scroll;
+  list-style-type: none;
+  list-style-position: inside;
+  z-index: 0;
+  margin-bottom: 2rem;
+}
+
+.industry-sec .list-right li {
+  font-family: 'DMSans';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  color: #656565;
+}
+
+.industry-sec .list-right li:first-child {
+  padding-left: 70px;
+}
+
+.industry-sec .list-right li:nth-child(2) {
+  padding-left: 130px;
+}
+
+.industry-sec .list-right li:last-child {
+  padding-left: 126px;
+  margin-top: 4.5rem;
+}
+
+@media (max-width: 767px) {
+  .industry-sec h2 {
+    font-size: 38px;
+  }
+  .industry-sec h4 {
+    font-size: 26px;
+  }
+  .industry-sec h3 {
+    font-size: 26px;
+  }
+  .industry-sec p {
+    font-size: 18px;
+  }
+  .industry-sec .btn {
+    padding: 10px 20px;
+  }
+  .industry-sec .list-left, .industry-sec .list-right {
+    width: auto;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+footer .copyright {
+  font-family: 'DMSans';
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer .copyright a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+
+@media (max-width: 767px) {
+  footer .copyright {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
